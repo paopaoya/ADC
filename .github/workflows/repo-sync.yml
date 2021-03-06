@@ -1,5 +1,5 @@
 # File: .github/workflows/repo-sync.yml    建立一个分支，把此文件放进分支的AC里
-name: 同步ziye
+name: 同步
 on:
   schedule:
     - cron: '1 * * * *'
@@ -7,7 +7,7 @@ on:
   watch:
     types: started
   repository_dispatch:
-    types: sync-6Svip120apk69-gitee_q8qsTAUA_cThxc1RBVUE
+    types: 同步
 jobs:
   repo-sync:
     env:
@@ -25,5 +25,5 @@ jobs:
         with:
           source_repo: "https://github.com/6Svip120apk69/gitee_q8qsTAUA_cThxc1RBVUE.git"
           source_branch: "main"
-          destination_branch: "main"
+          destination_branch: "ziye"
           github_token: ${{ secrets.PAT }}
