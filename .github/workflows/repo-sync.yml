@@ -37,7 +37,7 @@ jobs:
           destination_branch: "V2P"
           github_token: ${{ secrets.PAT }}
           
-      - name: shuye
+      - name: shuye_jd
         uses: repo-sync/github-sync@v2
         if: env.PAT
         with:
@@ -46,3 +46,20 @@ jobs:
           destination_branch: "shuye"
           github_token: ${{ github.event.client_payload.PAT || secrets.PAT }}
           
+      - name: jd-base
+        uses: repo-sync/github-sync@v2
+        if: env.PAT
+        with:
+          source_repo: "https://github.com/dockere/jd-base.git"
+          source_branch: "master"
+          destination_branch: "dockere"
+          github_token: ${{ github.event.client_payload.PAT || secrets.PAT }}
+          
+      - name: hundun
+        uses: repo-sync/github-sync@v2
+        if: env.PAT
+        with:
+          source_repo: "https://github.com/whyour/hundun.git"
+          source_branch: "master"
+          destination_branch: "whyour"
+          github_token: ${{ github.event.client_payload.PAT || secrets.PAT }}          
