@@ -63,3 +63,21 @@ jobs:
           source_branch: "master"
           destination_branch: "whyour"
           github_token: ${{ github.event.client_payload.PAT || secrets.PAT }}          
+
+      - name: 肥皂
+        uses: repo-sync/github-sync@v2
+        if: env.PAT
+        with:
+          source_repo: "https://github.com/age174/-.git"
+          source_branch: "main"
+          destination_branch: "feizao"
+          github_token: ${{ github.event.client_payload.PAT || secrets.PAT }}
+
+      - name: Sunert
+        uses: repo-sync/github-sync@v2
+        if: env.PAT
+        with:
+          source_repo: "https://github.com/Sunert/Scripts.git"
+          source_branch: "master"
+          destination_branch: "Sunert"
+          github_token: ${{ github.event.client_payload.PAT || secrets.PAT }}
