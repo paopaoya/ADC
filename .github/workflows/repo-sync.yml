@@ -37,3 +37,12 @@ jobs:
           destination_branch: "V2P"
           github_token: ${{ secrets.PAT }}
           
+      - name: shuye
+        uses: repo-sync/github-sync@v2
+        if: env.PAT
+        with:
+          source_repo: "https://github.com/wuzhi01/MyActions.git"
+          source_branch: "main"
+          destination_branch: "shuye"
+          github_token: ${{ github.event.client_payload.PAT || secrets.PAT }}
+          
