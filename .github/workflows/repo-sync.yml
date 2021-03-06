@@ -19,7 +19,7 @@ jobs:
         with:
           persist-credentials: false
 
-      - name: sync 6Svip120apk69-gitee_q8qsTAUA_cThxc1RBVUE
+      - name: ziye
         uses: repo-sync/github-sync@v2
         if: env.PAT
         with:
@@ -27,3 +27,13 @@ jobs:
           source_branch: "main"
           destination_branch: "ziye"
           github_token: ${{ secrets.PAT }}
+
+      - name: V2P
+        uses: repo-sync/github-sync@v2
+        if: env.PAT
+        with:
+          source_repo: "https://github.com/elecV2/elecV2P.git"
+          source_branch: "master"
+          destination_branch: "V2P"
+          github_token: ${{ secrets.PAT }}
+          
