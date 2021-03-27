@@ -37,13 +37,13 @@ jobs:
           destination_branch: "V2P"
           github_token: ${{ secrets.PAT }}
           
-      - name: shuye_jd
+      - name: jd
         uses: repo-sync/github-sync@v2
         if: env.PAT
         with:
-          source_repo: "https://github.com/wuzhi01/MyActions.git"
-          source_branch: "main"
-          destination_branch: "shuye"
+          source_repo: "https://github.com/DoveBoy/docker.git"
+          source_branch: "master"
+          destination_branch: "jd"
           github_token: ${{ github.event.client_payload.PAT || secrets.PAT }}
           
       - name: jd-base
