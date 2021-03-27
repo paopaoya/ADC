@@ -91,11 +91,4 @@ jobs:
           destination_branch: "CenBoMin"
           github_token: ${{ github.event.client_payload.PAT || secrets.PAT }} 
 
-      - name: Evine
-        uses: repo-sync/github-sync@v2
-        if: env.PAT
-        with:
-          source_repo: "https://github.com/nevinee/jd_shell.git"
-          source_branch: "master"
-          destination_branch: "Evine"
-          github_token: ${{ github.event.client_payload.PAT || secrets.PAT }} 
+
