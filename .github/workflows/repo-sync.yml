@@ -28,15 +28,6 @@ jobs:
           destination_branch: "V2P"
           github_token: ${{ secrets.PAT }}
           
-      - name: jd
-        uses: repo-sync/github-sync@v2
-        if: env.PAT
-        with:
-          source_repo: "https://github.com/DoveBoy/docker.git"
-          source_branch: "master"
-          destination_branch: "jd"
-          github_token: ${{ github.event.client_payload.PAT || secrets.PAT }}
-          
       - name: jd-base
         uses: repo-sync/github-sync@v2
         if: env.PAT
