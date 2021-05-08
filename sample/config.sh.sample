@@ -1,6 +1,6 @@
-## Version: v3.34.6
-## Date: 2021-04-29
-## Update Content: 增加CASH_EXCHANGE变量，控制京东领现金是否把红包兑换成京豆，默认开启，如介意的请改成false【上次更新:由于lxk重新建库导致仓库更新失败,需要删掉映射出来的scripts文件夹，重新更新，https://github.com/dockere/jd-base 】
+## Version: v3.35.0
+## Date: 2021-05-8
+## Update Content: 由于jd_scripts仓库频繁更新失败,故作者关闭之前的ssh_key,换了一个新的key并且构建了新的镜像，请重新拉取新镜像更新【上次更新:增加CASH_EXCHANGE变量，控制京东领现金是否把红包兑换成京豆，默认开启，如介意的请改成false，https://github.com/dockere/jd-base 】
 
 ## 上面版本号中，如果第2位数字有变化，那么代表增加了新的参数，如果只有第3位数字有变化，仅代表更新了注释，没有增加新的参数，可更新可不更新
 ## 如需更新，请参考（https://github.com/dockere/jd-base）。
