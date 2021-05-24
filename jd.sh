@@ -115,7 +115,7 @@ function Combin_All {
   #东东健康社区(jd_health.js)
   export JDHEALTH_SHARECODES=$(Combin_Sub ForOtherHealth "T022u_x3QRke_EnVIR_wnPEIcQCjVfnoaW5kRrbA@T012a1zrlZeWI-dHCjVfnoaW5kRrbA@T0205KkcHkJujwKkXXy9wK9NCjVfnoaW5kRrbA")
   #城城领现金(jd_city.js)
-  export CITY_SHARECODES=$(Combin_Sub ForOtherCity "RtGKz7j2QAn2LNKfE9Q6gFG7hb9pxmw-TNf70U6dO8YUXpAZ2w@HYXnz-ymQgqqfOzHW5h_1iZoHuKc8U0KCqx4Hv3uFvip@QMyKkLX_EEj6OdzWW5gzmmvH5PtiKTrbMXHrZ-VTRm4")
+  export CITY_SHARECODES=$(Combin_Sub ForOtherCity "H43lzOmhSQigEd7WW5gzmhOwZ1kZnGYYsiLm26frrMY@RtGKzrqmEgrwf4KdEIIw17MUBGsuuty6htFfjKmLSZ14u4P4oQ@GoXly-SjRA6-eIKSE9EymqdHIpPiEA_jMEE1PrYz89-ifdKK")
   #手机狂欢城(jd_carnivalcity.js)
   export JD818_SHARECODES=$(Combin_Sub ForOtherCarni "bc1a317d-6a73-4b5c-8b7d-9b0b17b3b035@82c9d822-8ca8-4adc-aabe-d9fdd25f552f@07741755-758a-4f07-bca7-96dbb4b5a556@2f4aaab3-32c0-47ec-90a6-4aa5f5aa339d")
   
