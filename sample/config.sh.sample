@@ -1,6 +1,6 @@
-## Version: v3.35.2
+## Version: v3.35.3
 ## Date: 2021-05-24
-## Update Content: 增加jd_city城城领现金互助变量CITY_SHARECODES，请更新脚本！【https://github.com/dockere/jd-base】
+## Update Content: 增加jd_city城城领现金互助变量CITY_SHARECODES以及手机狂欢城互助变量JD818_SHARECODES，请更新脚本！【https://github.com/dockere/jd-base】
 
 ## 上面版本号中，如果第2位数字有变化，那么代表增加了新的参数，如果只有第3位数字有变化，仅代表更新了注释，没有增加新的参数，可更新可不更新
 ## 如需更新，请参考（https://github.com/dockere/jd-base）。
@@ -301,6 +301,16 @@ MyCityB=""
 
 ForOtherCity1=""
 ForOtherCity2=""
+
+################################## 定义手机狂欢城互助（选填） ##################################
+## 具体填法及要求详见本文件最下方“互助码填法示例”
+MyCarni1=""
+MyCarni2=""
+MyCarniA=""
+MyCarniB=""
+
+ForOtherCarni1=""
+ForOtherCarni2=""
 
 
 ################################## 定义东东超市蓝币兑换数量（选填） ##################################
